@@ -29,14 +29,14 @@ body {
   width: 100%;
   max-width: 600px;
   margin: auto;
-  padding: 0px 5px 5px 5px;
+  padding: 0px 5px 10px 5px;
 }
 .featured h1 {
   font-size: 1.2rem;
   padding-top: 10px;
   padding-bottom: 0px;
 }
-.featured a {
+.feature-link {
   display: block;
   max-width: 400px;
   text-decoration: none;
@@ -46,7 +46,11 @@ body {
   border-radius: 15px;
   margin: 0px auto 12px auto;
 }
-
+.promo-img {
+  max-width: 410px;
+  border-radius: 15px;
+  opacity: 0.9;
+}
 /* Other Links */
 .imp-links h1 {
   font-size: 1.1rem;
