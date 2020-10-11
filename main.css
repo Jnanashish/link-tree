@@ -48,8 +48,7 @@ body {
 }
 .promo-img {
   width: 370px;
-  max-width: 400px;
-  margin: 0px auto 12px auto;
+  /* max-width: 400px; */
 
   border-radius: 15px;
   opacity: 0.9;
