@@ -2,94 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Thecodergeek Linktree</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180277606-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-180277606-1');
-    </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KMHM8HK');</script>
-    <!-- End Google Tag Manager -->
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font family from google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font awersome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <title>Linktree</title>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMHM8HK" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="heading">
-        <!-- Profile Image -->
-        <img class = "logo" src="./logo.png" alt="profile image">
-
-        <!-- Profile Name -->
-        <h1 class = "title">@thecodergeek</h1>
-    </div>
-    <div class = "featured">
-        <h1>Featured Link 🔥</h1>
-        <a class = "feature-link" href="https://www.bepec.in/registration-form">
-            <span>Data Science career transition program</span>
+    <!-- Header - logo and name  -->
+    <header class="header grid">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <div class="header-text">
+            <h1>@thecodergeek</h1>
+            <p>Get coding resources, ebooks, competitive programmibg group. Join us in other community platform</p>
+        </div>
+    </header>
+    <!-- End of header  -->
+    <!-- Navbar only for laptop view  -->
+    <section class="nav-bar">
+        <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">Competitive Programming</a></li>
+            <li><a href="#">Machine Learning</a></li>
+        </ul>
+    </section>
+    <!-- Nav bar end  -->
+    <!-- Featured link  -->
+    <section class="featured container">
+        <h3>Featured Link 🔥</h3>
+        <div class = "link">
+            <a href="#">Data science career transition Programe</a>
+        </div>
+    </section>
+    <!--End of featured link  -->
+    <!-- Coding Resources  -->
+    <section class="resource container">
+        <h3>Coding Resources</h3>
+        <div class="link grid">
+            <i class="fas fa-laptop-code"></i>
+            <a href="#">Web development</a>
+        </div>
+        <div class="link grid">
+            <i class="fas fa-robot"></i>
+            <a href="#">Machine Learning</a>
+        </div>
+        <div class="link grid">
+            <i class="fas fa-network-wired"></i>
+            <a href="#">Competitive Programming</a>
+        </div>
+        <div class="link grid">
+            <i class="fab fa-android"></i>
+            <a href="#">Android development</a>
+        </div>
+    </section>
+    <!-- End of coding Resources  -->
+    <!-- Amazon Books  -->
+    <!-- <section class="book-main container">
+        <div class="code-book grid">
+            <a href="#">
+                <h1>1. Dom Enlitika</h1>
+                <img src="images/DomEnlightened.jpg" alt="">
+            </a>
+            <a href="#">
+                <h1>2. Eloquent Js</h1>
+                <img src="images/Eloquentjs.jpeg" alt="">
+            </a>
+            <a href="#">
+                <h1>1. Demo book</h1>
+                <img src="images/demo.jpg" alt="">
+            </a>
+        </div>
+    </section> -->
+    <!-- End of amazon book  -->
+    <!-- Algoexpert  -->
+    <section class="container">
+        <a href="#">
+        <div class = "algoexpert">
+        <h2>Algoexpert.io</h2>
+        <p>The ultimate resource to prepare
+        for coding interview. Everyting you
+        need in one straeamline platform.</p>
+        <h3>use code "thecodergeek" for 10% off</h3>
+        <a class="btn link" href="#">Read More</a>
+        </div>
         </a>
-        <!-- <a href="https://www.bepec.in/registration-form">
-            <img class="promo-img" src="./4.jpg" alt="promoion image">
-        </a> -->
-    </div>
-    <!-- Free Courses -->
-    <div class="res-links">
-        <h1>Coding Resources 👇</h1>
-        <div class="list">
-            <a href="https://docs.google.com/document/d/e/2PACX-1vRiUqBB1rajbGqYKcqPupzsOu3uDEbliahZlumjII4-tcwpy0JRFaajlf9gqZ-vPlJ12xxxb2ADW9Wo/pub">Ultimate Resources for Web development</a>
-            
-        </div>
-    </div>
-    
-    <!-- Udemy courses -->
-    <div class="udemy-links">
-        <h1>📚 Best Udemy Courses</h1>
-        <div class="Ulinks">
-            <a href="http://bit.ly/python-jsh"><i class="devicon-python-plain colored icon"></i> <span>Complete Python Bootcamp</span> </a>
-            <a href="http://bit.ly/webd-jsh"><i class="devicon-html5-plain colored"></i> <span>Web development Bootcamp</span> </a>
-            <a href="http://bit.ly/js-jsh"><i class="devicon-javascript-plain colored"></i>
-<span>Javascript:From zero to expert</span></a>
-            <a href="http://bit.ly/hack-jsh"><i class="devicon-redhat-plain colored"></i>
-<span>Learn Ethical hacking</span></a>
-            <a href="http://bit.ly/ML-jsh"><i class="devicon-illustrator-plain colored"></i>
-<span>Machine Learning A-Z</span></a>
-
-        </div>
-    </div>
-    <!-- Other Links -->
-    <div class = "imp-links">
-        <h1 >Other Links</h1>
-        <div class = "links">
-            <!-- <a href="https://amazon.in/shop/thecodergeek">
-                <box-icon color=#fff type='solid' name='shopping-bags' style="position: absolute; left: 20px; font-size: 1.2rem;"></box-icon>Visit Our amazon store</a> -->
-            <a href="https://t.me/thecodergeek">Join Our telegram group to get free resources</a>
-            <a href="https://algoexpert.io/thecodergeek">Algoexpert👩‍💻: The ultimate resource to prepare for coding interview, use code "thecodergeek" for 15% off</a>
-        </div>
-    </div>
+    </section>
+    <!-- End of Algoexpert  -->
 </body>
 </html>
