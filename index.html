@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css">
     <title>Linktree</title>
@@ -63,23 +66,43 @@
         </div>
     </section>
     <!-- End of coding Resources  -->
-    <!-- Amazon Books  -->
-    <!-- <section class="book-main container">
-        <div class="code-book grid">
-            <a href="#">
-                <h1>1. Dom Enlitika</h1>
-                <img src="images/DomEnlightened.jpg" alt="">
-            </a>
-            <a href="#">
-                <h1>2. Eloquent Js</h1>
-                <img src="images/Eloquentjs.jpeg" alt="">
-            </a>
-            <a href="#">
-                <h1>1. Demo book</h1>
-                <img src="images/demo.jpg" alt="">
-            </a>
+    <!-- Amazon Book Carousel  -->
+    <section class="amazon-codeBook container">
+        <h3>Best book for Coding in Amazon</h3>
+
+        <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="amazon-book carousel-cell">
+                <div class="grid">
+                    <h3 class="book-title">Dom Enlightenment</h3>
+                    <img class="book-img" src="images/DomEnlightened.jpg" alt="">
+                    <div class="text-area">
+                        <p>by Max-Joe Orelly publication</p>
+                    </div>
+                    <img class="amazon-logo" src="images/amazon-logo.png" alt="">
+                </div>
+            </div>
+            <div class="amazon-book carousel-cell">
+                <div class="grid">
+                    <h3 class="book-title">Dom Enlightenment</h3>
+                    <img class="book-img" src="images/DomEnlightened.jpg" alt="">
+                    <div class="text-area">
+                        <p>by Max-Joe Orelly publication</p>
+                    </div>
+                    <img class="amazon-logo" src="images/amazon-logo.png" alt="">
+                </div>
+            </div>
+            <div class="amazon-book carousel-cell">
+                <div class="grid">
+                    <h3 class="book-title">Dom Enlightenment</h3>
+                    <img class="book-img" src="images/DomEnlightened.jpg" alt="">
+                    <div class="text-area">
+                        <p>by Max-Joe Orelly publication</p>
+                    </div>
+                    <img class="amazon-logo" src="images/amazon-logo.png" alt="">
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
     <!-- End of amazon book  -->
     <!-- Algoexpert  -->
     <section class="container">
@@ -95,5 +118,7 @@
         </a>
     </section>
     <!-- End of Algoexpert  -->
+    <!-- Flickity carousel  -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

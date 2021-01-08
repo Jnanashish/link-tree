@@ -149,21 +149,57 @@ h3 {
 }
 
 /* Amazon book  */
-/* .code-book {
+.amazon-codeBook {
+  background-color: #fff;
+}
+.amazon-codeBook {
   max-width: 500px;
-  margin: 0 auto;
-  align-self: center;
+  margin: 10px auto;
 }
-.code-book h1 {
-  font-size: 12px;
-  color: #000;
-  font-weight: 500;
+.amazon-book .grid {
+  grid-template-columns: 50%;
+  column-gap: 10px;
+  row-gap: 4px;
+  justify-content: space-between;
+}
+.carousel-cell {
+  margin-left: 100px;
+}
+.amazon-book {
+  background-color: var(--lightgrey-color);
+  box-shadow: 5px 2px #cbcbcb;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px #000;
+  max-width: 230px;
+  margin-left: 10px;
+}
+.amazon-book .book-title {
+  grid-column: 1 / span3;
+  grid-row: 1;
+  text-align: left;
+  font-size: 18px;
+}
+.amazon-book .book-img {
+  grid-column: 1;
+  grid-row: 2 / span 4;
   align-self: start;
-}
-.code-book img {
   width: 100px;
-  align-self: center;
-} */
+}
+.amazon-book .text-area {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+}
+.amazon-book .amazon-logo {
+  grid-column: 2;
+  grid-row: 5;
+  width: 20px;
+  align-self: end;
+  justify-self: end;
+}
 /* //////////////////////////////// */
 /* media querie  */
 /* Tablet   */
