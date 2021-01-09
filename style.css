@@ -147,58 +147,82 @@ h3 {
   padding: 2px 20px;
   font-size: 16px;
 }
-
-/* Amazon book  */
-.amazon-codeBook {
+/* //////////////////////////////////// */
+/* Amazon book  carousel*/
+.amazon-book {
   background-color: #fff;
-}
-.amazon-codeBook {
   max-width: 500px;
   margin: 10px auto;
 }
-.amazon-book .grid {
+.book-card .grid {
   grid-template-columns: 50%;
   column-gap: 10px;
   row-gap: 4px;
   justify-content: space-between;
 }
-.carousel-cell {
-  margin-left: 100px;
-}
-.amazon-book {
-  background-color: var(--lightgrey-color);
-  box-shadow: 5px 2px #cbcbcb;
+.book-card {
+  background-color: #fff;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 5px #000;
   max-width: 230px;
-  margin-left: 10px;
+  box-shadow: 1px 1px 5px #888888;
+  margin: 10px 20px;
 }
-.amazon-book .book-title {
+.carousel-cell {
+  /* margin-left: 40px; */
+}
+.carousel-cell .is-selected {
+  background-color: #146396;
+}
+.book-card .book-title {
   grid-column: 1 / span3;
   grid-row: 1;
   text-align: left;
   font-size: 18px;
 }
-.amazon-book .book-img {
+.book-card .book-img {
   grid-column: 1;
   grid-row: 2 / span 4;
   align-self: start;
   width: 100px;
+  height: 120px;
 }
-.amazon-book .text-area {
+.book-card .text-area {
   grid-column: 2;
   grid-row: 2;
   text-align: left;
   font-size: 13px;
   font-weight: 400;
+  line-height: 1.3;
 }
-.amazon-book .amazon-logo {
+.book-card .amazon-logo {
   grid-column: 2;
   grid-row: 5;
   width: 20px;
   align-self: end;
   justify-self: end;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid#000;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+}
+.flickity-button:disabled {
+  display: none;
 }
 /* //////////////////////////////// */
 /* media querie  */
@@ -222,6 +246,9 @@ h3 {
   }
   .resource .link {
     text-align: left;
+  }
+  .flickity-page-dots .dot {
+    display: none;
   }
 }
 /* Laptop view  */
