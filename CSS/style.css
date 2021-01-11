@@ -113,6 +113,9 @@ h3 {
 }
 
 /* Algoexpert  */
+.algo .container {
+  background-color: #fff;
+}
 .algoexpert {
   text-align: left;
   background: linear-gradient(

@@ -1,0 +1,37 @@
+.udemy-card .grid {
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+}
+.main-poster {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  /* max-width: 400px; */
+}
+.udemy-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px #cbcbcb;
+}
+
+.udemy-card .title {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 15px;
+}
+.udemy-card .link {
+  grid-column: 1;
+  grid-row: 3;
+  padding: 5px;
+  font-size: 13px;
+}
+.udemy-card .udemy-logo {
+  width: 25px;
+  justify-self: end;
+  grid-column: 2;
+  grid-row: 3;
+}
