@@ -1,3 +1,53 @@
+:root {
+  --primary-darkbluecolor: #0a2540;
+}
+
+/* default link card  */
+.paid-course {
+  margin: 100px auto;
+  text-align: left;
+  max-width: 500px;
+  padding: 5px;
+}
+.paid-course h2 {
+  /* color: var(--primary-darkbluecolor); */
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+.card {
+  text-align: left;
+  border-bottom: 1.5px solid #000;
+  padding: 10px 10px;
+  border-left: 2px solid #cbcbcb;
+  border-right: 2px solid #cbcbcb;
+  line-height: 1.4;
+}
+.card:hover {
+  background-color: #fafafa;
+  border-bottom: 2px solid #000;
+}
+.card a {
+  color: var(--primary-darkbluecolor);
+  font-size: 18px;
+  font-weight: 500;
+}
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Books  */
+.books .flex {
+  max-width: 500px;
+  background-color: aquamarine;
+  margin: 0 auto;
+  padding: 5px;
+}
+.books img {
+  width: 40px;
+}
+/* Udemy course  */
 .udemy-card .grid {
   grid-template-columns: 1fr 1fr;
   row-gap: 10px;
@@ -8,11 +58,11 @@
   /* max-width: 400px; */
 }
 .udemy-card {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 10px auto;
   background-color: #ffff;
   border-radius: 10px;
-  padding: 10px;
+  padding: 8px 10px;
   box-shadow: 3px 3px 10px #cbcbcb;
 }
 
@@ -24,6 +74,7 @@
   font-size: 15px;
 }
 .udemy-card .link {
+  margin-top: 1px;
   grid-column: 1;
   grid-row: 3;
   padding: 5px;
@@ -34,4 +85,10 @@
   justify-self: end;
   grid-column: 2;
   grid-row: 3;
+}
+/* Mobile */
+@media (max-width: 400px) {
+  .udemy-card {
+    max-width: 95%;
+  }
 }
